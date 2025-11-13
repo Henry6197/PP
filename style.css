@@ -12,3 +12,47 @@
    Dark Accent: #999, #ccc;
    Dark Shades: #664d00, #333, #000;
 */
+
+/* Base body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+/* ===== PROFILE PICTURE SECTION ===== */
+/* Profile picture styling - inline with name */
+.profile-pic {
+  display: inline-block; /* Makes profile pic inline with name */
+  width: 80px; /* Resize profile picture */
+  height: 80px;
+  border: 2px solid #000;
+  border-radius: 50%; /* Circular profile picture */
+  margin: 5px;
+  vertical-align: middle; /* Align with text */
+}
+
+/* Profile section container */
+.profile-section {
+  padding: 10px;
+  background: #f0f0f0;
+  text-align: center;
+}
+
+/* Profile info (name and email) - inline with picture */
+.profile-info {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.profile-info h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.profile-info em {
+  font-size: 12px;
+  color: #333;
+}
