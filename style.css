@@ -1,0 +1,14 @@
+/* Apply border-box to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Palette:
+   Light Shades: #fff;
+   Light Accent: #f9f9f9, #f0f0f0, #e6e6e6;
+   Main Brand Color: #b8860b (yellowish brown);
+   Dark Accent: #999, #ccc;
+   Dark Shades: #664d00, #333, #000;
+*/
