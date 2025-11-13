@@ -21,42 +21,6 @@ body {
   font-size: 14px;
 }
 
-/* ===== PROFILE PICTURE SECTION ===== */
-/* Profile picture styling - inline with name */
-.profile-pic {
-  display: inline-block; /* Makes profile pic inline with name */
-  width: 80px; /* Resize profile picture */
-  height: 80px;
-  border: 2px solid #000;
-  border-radius: 50%; /* Circular profile picture */
-  margin: 5px;
-  vertical-align: middle; /* Align with text */
-}
-
-/* Profile section container */
-.profile-section {
-  padding: 10px;
-  background: #f0f0f0;
-  text-align: center;
-}
-
-/* Profile info (name and email) - inline with picture */
-.profile-info {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: left;
-}
-
-.profile-info h3 {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-.profile-info em {
-  font-size: 12px;
-  color: #333;
-}
-
 /* ===== NAVIGATION BAR SECTION ===== */
 /* Navigation container */
 nav {
@@ -98,4 +62,216 @@ nav {
 .navbar a:hover {
   background: #b8860b;
   color: #fff;
+}
+
+/* ===== HEADER SECTION ===== */
+/* Header with profile picture, name, and email */
+header {
+  background: #b8860b;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 3px solid #664d00;
+}
+
+/* Profile section container inside header */
+.profile-section {
+  padding: 10px;
+  background: transparent; /* Transparent to show header background */
+  text-align: center;
+}
+
+/* Profile picture styling - inline with name */
+.profile-pic {
+  display: inline-block; /* Makes profile pic inline with name */
+  width: 80px; /* Resize profile picture */
+  height: 80px;
+  border: 2px solid #fff; /* White border to stand out on header */
+  border-radius: 50%; /* Circular profile picture */
+  margin: 5px;
+  vertical-align: middle; /* Align with text */
+}
+
+/* Profile info (name and email) - inline with picture */
+.profile-info {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  margin: 5px 0;
+  color: #fff; /* White text on header background */
+}
+
+.profile-info em {
+  font-size: 13px;
+  color: #f0f0f0; /* Light text for email */
+}
+
+/* ===== MAIN CONTENT LAYOUT ===== */
+/* Main container for page content */
+main {
+  max-width: 900px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+
+/* Flexbox wrapper for 3-column layout */
+.content-wrapper {
+  display: flex; /* Flexbox for 3-column layout */
+  gap: 10px; /* Space between columns */
+}
+
+/* Left and right columns (skills and projects) */
+.left-column,
+.right-column {
+  flex: 1; /* Equal smaller width */
+  background: #ccc;
+  border: 1px solid #999;
+  padding: 10px;
+}
+
+/* Column headings */
+.left-column h2,
+.right-column h2 {
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+  padding: 5px;
+  margin-bottom: 8px;
+  background: #999;
+  color: #fff;
+}
+
+/* Lists in side columns */
+.left-column ol,
+.left-column ul,
+.right-column ul {
+  margin-left: 20px;
+}
+
+.left-column li {
+  margin-bottom: 5px;
+}
+
+/* Center column (bio section) - BIGGER than side columns */
+.center-column {
+  flex: 2; /* Twice the width of side columns */
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.center-column h2 {
+  font-size: 18px;
+  border-bottom: 2px solid #b8860b;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: #b8860b;
+}
+
+.center-column p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.right-column li {
+  margin-bottom: 8px;
+}
+
+.right-column p {
+  font-size: 12px;
+  margin: 5px 0;
+  color: #333;
+}
+
+/* Text styling */
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+/* ===== FOOTER SECTION ===== */
+/* Footer with copyright and email */
+footer {
+  background: #ccc;
+  border-top: 1px solid #999;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* Link styling */
+a {
+  color: #b8860b;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #8b6914;
+}
+
+a:hover {
+  color: #ff6600;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack columns vertically */
+  }
+  
+  header h1 {
+    font-size: 22px;
+  }
+  
+  .navbar {
+    flex-direction: column; /* Vertical navbar on mobile */
+  }
+  
+  .navbar li {
+    border-right: none;
+    border-bottom: 1px solid #999;
+  }
+  
+  .navbar li:last-child {
+    border-bottom: none;
+  }
+  
+  .navbar a {
+    text-align: center;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  
+  header h1 {
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 0 5px;
+  }
+  
+  .left-column,
+  .center-column,
+  .right-column {
+    padding: 8px;
+  }
+  
+  .navbar a {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
 }
