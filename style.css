@@ -12,3 +12,22 @@
    Dark Accent: #999, #ccc;
    Dark Shades: #664d00, #333, #000;
 */
+
+.profile-section {
+  text-align: center;
+}
+
+.name {
+  display: inline-block;
+  font-size: larger;
+  font-family: 'Times New Roman', Times, serif;
+  color: #664d00; 
+}
+
+.profile-pic {
+  display: inline-block;
+  width: 100px;
+  height: auto;
+  border-radius: 10%;
+  margin: 5px;
+}
