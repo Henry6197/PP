@@ -21,7 +21,7 @@
   display: inline-block;
   font-size: larger;
   font-family: 'Times New Roman', Times, serif;
-  color: #664d00; 
+  color: #fffcf2; 
 }
 
 .profile-pic {
@@ -48,5 +48,48 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #333;
+  background-color: #664d00;
+}
+
+/* 3-Column Layout */
+.content-wrapper {
+  display: flex;
+  gap: 0;
+  min-height: 400px;
+}
+
+.left-column {
+  flex: 1;
+  background-color: #664d00;
+  color: #fff;
+  padding: 20px;
+}
+
+.center-column {
+  flex: 2;
+  background-color: #e6e6e6;
+  color: #333;
+  padding: 20px;
+}
+
+.right-column {
+  flex: 1;
+  background-color: #664d00;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
+header{
+  background-color: #664d00;
+}
+footer {background-color: #b8860b; 
+  text-align: center; 
+  padding: 10px; 
+  color: #fdf8c9;
 }
